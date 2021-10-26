@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>サッカー部認証ページ</title>
+
+</head>
+<body>
+<div class="d">
+<h2 class="h4">このページはあなたがT中学校のサッカー部員であるかを認証するページです</h2>
+<p class="p">いくつかの質問に答え部員と認められた者のみかサイトへアクセスできます</p>
+
+<form class="ff"name="textt">
+<p class="p2">質問:1 現在の顧問の先生の名前をフルネームで書きまなさい(漢字で)</p>
+<input class="inp1"type="text" id="text1" value="">
+<p class="p2">質問:2 その人の車のナンバーを書きなさい
+</p>
+<input class="inp1" type="text" id="text2" value="">
+<p class="p2">質問:3 サッカー部の副顧問の名前の苗字を書きなさい(漢字で)
+</p>
+<input class="inp1" type="text" id="text3" value="">
+<input class="b1"type="button" id="bution" value="認証">
+</form>
+</div>
+<style>
+.d{
+font-family:monospace;
+}
+.h4{
+font-size:50px;
+border-bottom:1px solid;
+}
+.p{
+font-size:30px;
+}
+.ff{
+font-weight:700;
+font-size:40px;
+}
+.inp1{
+font-size:50px;
+border:2px solid;
+width:600px;
+height:80px;
+}
+.b1{
+margin-top:60px;
+font-size:40px;
+width:300px;
+height:90px;
+}
+</style>
+<script>
+let text1 = document.getElementById('text1');
+let text2 = document.getElementById('text2');
+let text3 = document.getElementById('text3');
+let button = document.getElementById('bution');
+button.addEventListener('click',check);
+
+function check(){
+if(text1.value === "佐藤雅彦"){
+check2();
+}else{
+alert("違います");
+document.textt.reset();
+}
+}
+function check2(){
+if(text2.value === "3833"){
+check3();
+}else{
+alert("違います");
+document.textt.reset();
+}
+}
+function check3(){
+if(text3.value === "高梨"){
+
+}else{
+alert("違います");
+document.textt.reset();
+}
+};
+</script>
+</body>
+</html>
