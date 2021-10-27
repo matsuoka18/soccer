@@ -22,7 +22,7 @@ document.textt.reset();
 }
 function check3(){
 if(text3.value === "高梨"){
-location.href ="https://matsuoka18.github.io/Matsuoka.gitHub.io"
+location.href ="soccer2.html"
 }else{
 alert("違います");
 document.textt.reset();
