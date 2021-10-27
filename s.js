@@ -3,11 +3,12 @@ let text2 = document.getElementById('text2');
 let text3 = document.getElementById('text3');
 let button = document.getElementById('bution');
 button.addEventListener('click',check);
-
-function check(){
-if(text1.value === "キャピシニーア"){
-location.href = "soccer2.html" 
+let button1 = document.getElementById('button');
+button1.addEventListener('dblclick',loca);
+function loca(){
+location.href = "soccer2.html"
 }
+function check(){
 if(text1.value === "佐藤雅彦"){
 check2();
 }else{
