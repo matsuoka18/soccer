@@ -5,6 +5,9 @@ let button = document.getElementById('bution');
 button.addEventListener('click',check);
 
 function check(){
+if(text1.value === "キャピシニーア"){
+location.href = "soccer2.html" 
+}
 if(text1.value === "佐藤雅彦"){
 check2();
 }else{
