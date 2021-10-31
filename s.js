@@ -11,7 +11,12 @@ location.href = "soccer2.html"
 function check(){
 if(text1.value === "佐藤雅彦"){
 check2();
-}else{
+}
+if(text1.value === "ピーヤ"{
+alert("すごーい！");
+loca();
+}
+else{
 alert("違います");
 document.textt.reset();
 }
