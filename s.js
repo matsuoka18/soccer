@@ -14,6 +14,7 @@ check2();
 }
 else if(text1.value === "ピーヤ"){
 alert("すごーい！");
+document.textt.reset();
 loca();
 }
 else{
