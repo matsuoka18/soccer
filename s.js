@@ -12,7 +12,7 @@ function check(){
 if(text1.value === "佐藤雅彦"){
 check2();
 }
-if(text1.value === "ピーヤ"){
+else if(text1.value === "ピーヤ"){
 alert("すごーい！");
 loca();
 }
